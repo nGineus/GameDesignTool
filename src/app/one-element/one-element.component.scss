@@ -1,0 +1,40 @@
+.element {
+
+  &__title {
+    font-size: 16px;
+    margin-left: 10px;
+
+    font-family: monospace;
+  }
+
+  &__wrapper {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    margin: 0 10px 10px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 32px;
+  }
+
+  &__cell {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    margin: 1px;
+
+    &__common {
+      background-color: silver;
+    }
+
+    &__active {
+      background-color: brown;
+    }
+  }
+
+}

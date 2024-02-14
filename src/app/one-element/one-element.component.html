@@ -1,0 +1,16 @@
+<p class="element__title">{{ index }}. [{{ element }}]</p>
+<div class="element__wrapper">
+  <div
+    class="element__column"
+    *ngFor="let columnValue of element"
+  >
+    <div
+      class="element__cell"
+      *ngFor="let cell of maxDepth; let cellCoordinate = index"
+      [ngClass]=" cellCoordinate === columnValue ? 'element__cell__active' : 'element__cell__common'
+
+      "
+    >
+    </div>
+  </div>
+</div>
